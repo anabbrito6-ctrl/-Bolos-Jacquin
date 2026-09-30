@@ -9,6 +9,7 @@
     --corPrincipal: #fff4f4;
     --fontHanken: "Hanken Grotesk", sans-serif;
     --corDourado: #c5a028;
+    --corsecundaria: #fdf8f8;
 }
 
 
@@ -167,6 +168,7 @@ form {
 .lf_coluna {
     display: flex;
     flex-direction: column;
+    margin-right: 50px;
 }
 
 
@@ -180,7 +182,8 @@ form {
 
 .form_coluna1,
 .form_coluna2 {
-    width: 414px;
+    max-width: 500px;
+    width: 45%;
 }
 
 .input_img,
@@ -189,7 +192,7 @@ form label {
     text-transform: uppercase;
     color: #444444;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 5px;
 }
 
@@ -242,26 +245,64 @@ form input[type=text] {
 }
 
 .input_cat {
-    width: 314px;
-    margin-right: 20px;
+    width: 79%;
 }
 
+.input_cat {
+    max-width: 314px;
+    margin-right: 20px;
+
+}
+
+.inputs_valor {
+    width: 90%;
+}
 
 .inputs_valor input {
     margin-right: 20px;
-    width: 300px;
+    max-width: 360px;
 }
 
 form input[type=button] {
     margin: 100px auto 0;
     display: block;
     background-color: #000000;
-    font-size: var(--fontHanken);
+    font-size: 12px;
+    font-family: var(--fontHanken);
+    text-transform: uppercase;
     color: #ffffff;
-   
+    font-weight: 600;
+    padding: 16px 55px;
+    cursor: pointer;
+    height: 50px;
+    letter-spacing: 3px;
+}
+
+/* ------------------lista de produtos------------------ */
+.list_produtos{
+    background-color: var(--corsecundaria) ;
+}
+
+table{
+    background-color: aquamarine;
+    width: 100%;
+}
+
+thead{
+    font-size: 12px;
+    font-weight: 600;
+    color: #444444;
+}
 
 
+tbody{
+    color: #aaaaaa;
+}
 
+table svg{
+    width: 35px;
+    font-family: var(--fontHanken);
+    text-transform: uppercase;
 }
 
 /* ----------medias----------- */
@@ -289,9 +330,22 @@ form input[type=button] {
     .box_h2 hr {
         margin-top: 10px;
         width: 70%;
+
     }
 
 
+    /*--------------------Formulario-------------------- */
+
+    .inputs_form {
+        flex-direction: column;
+        align-items: center;
+
+    }
 
 
+    .form_coluna1,
+    .form_coluna2 {
+        max-width: 500px;
+        width: 80%;
+    }
 }
